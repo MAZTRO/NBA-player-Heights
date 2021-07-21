@@ -1,0 +1,195 @@
+.loaderContainer {
+  width: 100%;
+  height: 100%;
+
+  margin: auto;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loaderContainer .height {
+  margin: auto auto 5px auto;
+  padding: 10px 20px;
+
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #C9082A;
+  background-color: #C9082A;
+
+  font-size: 1.5vw;
+  color: #FFF;
+}
+
+.loaderContainer .height::placeholder {
+  color: #FFFA;
+}
+
+.loaderContainer .height:focus {
+  border-bottom: 1px solid #FFF;
+}
+
+/* =================================== */
+
+.loaderContainer .listCont {
+  width: 70%;
+  height: 80%;
+  max-height: 400px;
+
+  margin: 5px auto auto auto;
+  padding: 10px;
+
+  background: #0009;
+  backdrop-filter: blur( 10.5px );
+  -webkit-backdrop-filter: blur( 10.5px );
+  border-radius: 10px;
+  border: 1px solid #FFF2;
+
+  scrollbar-width: thin;
+  scrollbar-color: #C9082A transparent;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.loaderContainer .listCont .playerBox {
+  width: 30%;
+  min-width: 200px;
+
+  margin: 5px auto;
+  padding: 5px;
+
+  display: flex;
+  flex-flow: column;
+
+  color: #FFF;
+
+  background-color: #FFF2;
+  border-radius: 5px;
+}
+
+.loaderContainer .listCont .playerBox h2 {
+  width: 90%;
+
+  margin: 10px auto;
+
+  color: #FFF;
+  text-align: center;
+  font-weight: 300;
+  font-size: 2vw;
+}
+
+.loaderContainer .listCont .playerBox p {
+  width: 90%;
+
+  margin: 5px auto;
+
+  color: #FFF;
+  text-align: center;
+  font-size: 1vw;
+}
+
+.loaderContainer .listCont .playerBox p span {
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* ====================================================== */
+/* ====================================================== */
+/* ==================== RESPONSIVE ====================== */
+/* ====================================================== */
+/* ====================================================== */
+
+@media screen and (max-width: 1024px) {
+  .loaderContainer .listCont {
+    width: 90%;
+  }
+
+  .loaderContainer .height {
+    font-size: 2vw;
+  }
+
+  .loaderContainer .listCont .playerBox h2 {
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+  }
+  
+  .loaderContainer .listCont .playerBox p {
+    font-size: 1.3vw;
+    line-height: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .loaderContainer .listCont {
+    width: 90%;
+  }
+
+  .loaderContainer .height {
+    font-size: 2.5vw;
+  }
+
+  .loaderContainer .listCont .playerBox h2 {
+    font-size: 3vw;
+    line-height: 3vw;
+  }
+  
+  .loaderContainer .listCont .playerBox p {
+    font-size: 1.7vw;
+    line-height: 1.7vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .loaderContainer .listCont .playerBox p {
+    font-size: 2vw;
+    line-height: 2vw;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .loaderContainer .listCont {
+    width: 90%;
+  }
+
+  .loaderContainer .height {
+    font-size: 3vw;
+  }
+
+  .loaderContainer .listCont .playerBox h2 {
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+  }
+  
+  .loaderContainer .listCont .playerBox p {
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .loaderContainer .listCont {
+    width: 90%;
+  }
+
+  .loaderContainer .height {
+    font-size: 5vw;
+  }
+
+  .loaderContainer .listCont .playerBox h2 {
+    font-size: 6vw;
+    line-height: 6vw;
+  }
+  
+  .loaderContainer .listCont .playerBox p {
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+  }
+}

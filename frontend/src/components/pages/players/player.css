@@ -1,0 +1,299 @@
+.playersContainer {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-flow: column;
+
+  margin: auto;
+}
+
+.playersContainer header {
+  width: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #FFF;
+}
+
+.playersContainer header h1 {
+  margin: auto auto auto 2%;
+
+  color: #17408B;
+  font-size: 1.4vw;
+  font-weight: 600;
+}
+
+.playersContainer header h2 {
+  margin: auto 2% auto auto;
+
+  color: #17408B;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.playersContainer header .nbaLogo {
+  width: 7vw;
+  height: calc(7vw / 1.6);
+
+  margin: 10px auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../../images/Logo-NBA-small.png');
+
+  transition: .3s;
+}
+
+.playersContainer header .nbaLogo:hover {
+  transform: scale(1.1);
+}
+
+/* ============================================= */
+
+.playersContainer .spinner {
+  margin: auto;
+}
+
+.playersContainer .listContainer {
+  width: 100%;
+  height: 100%;
+
+  margin: auto;
+
+  display: flex;
+
+  background-image: url('../../images/bgImg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.playersContainer .listContainer .errorMsg {
+  margin: auto;
+  padding: 2vw;
+
+  display: flex;
+  flex-flow: column;
+
+  background: #0009;
+  backdrop-filter: blur( 10.5px );
+  -webkit-backdrop-filter: blur( 10.5px );
+  border-radius: 10px;
+  border: 1px solid #FFF2;
+}
+
+.playersContainer .listContainer .errorMsg h2 {
+  width: 80%;
+  margin: auto;
+
+  color: #FFF;
+  font-weight: 300;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.playersContainer .listContainer .errorMsg .errorBtn {
+  margin: 30px auto;
+  padding: 10px 20px;
+
+  background-color: #C9082A;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+
+  color: #FFF;
+  font-size: 1vw;
+  font-weight: 300;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+/* ============================================= */
+
+.playersContainer footer {
+  width: 100%;
+
+  margin: auto auto 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #000;
+}
+
+.playersContainer footer button {
+  margin: auto;
+  padding: 10px 20px;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  color: #CCC;
+  font-size: 1vw;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.playersContainer footer button:hover {
+  color: #FFF;
+}
+
+/* ====================================================== */
+/* ====================================================== */
+/* ==================== RESPONSIVE ====================== */
+/* ====================================================== */
+/* ====================================================== */
+
+@media screen and (max-width: 1024px) {
+  .playersContainer header h1 {
+    font-size: 1.7vw;
+  }
+  
+  .playersContainer header h2 {
+    font-size: 1.5vw;
+  }
+  
+  .playersContainer header .nbaLogo {
+    width: 10vw;
+    height: calc(10vw / 1.6);
+
+    margin: 5px auto;
+  }
+
+  .playersContainer footer button {
+    font-size: 1.5vw;
+  }
+
+  /* ===================================== */
+
+  .playersContainer .listContainer .errorMsg {
+    padding: 2vw;
+  }
+  
+  .playersContainer .listContainer .errorMsg h2 {
+    font-size: 3vw;
+  }
+  
+  .playersContainer .listContainer .errorMsg .errorBtn {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .playersContainer header h1 {
+    font-size: 2.4vw;
+  }
+  
+  .playersContainer header h2 {
+    font-size: 2vw;
+  }
+  
+  .playersContainer header .nbaLogo {
+    width: 12vw;
+    height: calc(12vw / 1.6);
+
+    margin: 5px auto;
+  }
+
+  .playersContainer footer button {
+    font-size: 2vw;
+  }
+
+  /* ===================================== */
+
+  .playersContainer .listContainer .errorMsg {
+    padding: 2vw;
+  }
+  
+  .playersContainer .listContainer .errorMsg h2 {
+    font-size: 4vw;
+  }
+  
+  .playersContainer .listContainer .errorMsg .errorBtn {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .playersContainer header h1 {
+    font-size: 2.6vw;
+  }
+  
+  .playersContainer header h2 {
+    font-size: 2.4vw;
+  }
+  
+  .playersContainer header .nbaLogo {
+    width: 12vw;
+    height: calc(12vw / 1.6);
+
+    margin: 5px auto;
+  }
+
+  .playersContainer footer button {
+    font-size: 2.3vw;
+  }
+
+  /* ===================================== */
+
+  .playersContainer .listContainer .errorMsg {
+    padding: 2vw 0;
+    width: 90%;
+  }
+  
+  .playersContainer .listContainer .errorMsg h2 {
+    font-size: 4.5vw;
+  }
+  
+  .playersContainer .listContainer .errorMsg .errorBtn {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .playersContainer header h1 {
+    font-size: 3vw;
+  }
+  
+  .playersContainer header h2 {
+    font-size: 2.7vw;
+  }
+  
+  .playersContainer header .nbaLogo {
+    width: 17vw;
+    height: calc(17vw / 1.6);
+
+    margin: 5px auto;
+  }
+
+  .playersContainer footer button {
+    font-size: 3.5vw;
+  }
+
+  /* ===================================== */
+
+  .playersContainer .listContainer .errorMsg {
+    padding: 2vw 0;
+    width: 90%;
+  }
+  
+  .playersContainer .listContainer .errorMsg h2 {
+    font-size: 6vw;
+  }
+  
+  .playersContainer .listContainer .errorMsg .errorBtn {
+    font-size: 3vw;
+  }
+}
