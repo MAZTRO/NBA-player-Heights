@@ -14,7 +14,7 @@ let Loader = (props) => {
   }, [])
 
   const dataFiltered = data.filter(item => {
-    if (item["h_in"] === height) {
+    if (item["h_in"] >= height) {
       return true
     } else {
       return false
